@@ -1,0 +1,222 @@
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    min-height: 100vh;
+    background-image: url('/src/images/20944051.jpg');
+    background-size:     cover;
+    background-repeat:   no-repeat;
+    background-position: center center;
+}
+
+::-webkit-scrollbar {
+    width: .5rem;
+    border-radius: 50px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(229, 233, 234, 0.35);
+    border-radius: 50px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #dfa49f;
+    border-radius: 50px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #ea8780;
+}
+
+.root{
+    flex: 1;
+}
+
+.main-container{
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+    padding: 5rem;
+    justify-content: center;
+}
+
+.card{
+    background-color: rgba(229, 233, 234, 0.35);
+    border-radius: 5px;
+    box-shadow:
+            4.5px 4.5px 3.6px rgba(0, 0, 0, 0.024),
+            12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
+            30.1px 30.1px 24.1px rgba(0, 0, 0, 0.046),
+            100px 100px 80px rgba(0, 0, 0, 0.07);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 45rem;
+}
+
+.card-header{
+    font-family: 'Calistoga', sans-serif;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #ef746b;
+    padding: 1rem;
+}
+
+.card-header hr{
+    width: 90%;
+    border: 1px solid #4548e3;
+}
+
+.card-header input{
+    width: 80%;
+    padding: .5rem;
+    font-family: 'Calistoga', sans-serif;
+    border-radius: 5px;
+    border: none;
+    background-color: rgba(7, 38, 73, 0.45);
+    color: white;
+    text-transform: uppercase;
+}
+
+.card-header input::placeholder{
+    color: #dfa49f;
+}
+
+.card-header input:focus{
+
+    outline: 1px solid #4548e3;
+    box-shadow: none;
+}
+
+.card-body{
+    overflow: scroll;
+    overflow-x: hidden;
+    flex: 1;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.shopping-lists-container{
+    width: 20%;
+}
+
+.list-items-container{
+    width: 50%;
+}
+
+.header-with-button{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.header-with-button img{
+    width: 1.5rem;
+}
+
+.header-with-button img:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.list{
+    font-family: 'Capriola', sans-serif;
+    width: 80%;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow:
+            4.5px 4.5px 3.6px rgba(0, 0, 0, 0.024),
+            12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
+            30.1px 30.1px 24.1px rgba(0, 0, 0, 0.046),
+            100px 100px 80px rgba(0, 0, 0, 0.07);
+    background-color: #ef746b;
+    color: white;
+    text-align: center;
+}
+
+.list:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.selected-list{
+    background-color: #a1b3f1;
+}
+
+.list-items{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.list-item{
+    background-color: #4548e3;
+    border-radius: 5px;
+    padding: 1rem;
+    color: white;
+    font-family: 'Capriola', sans-serif;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.list-item img{
+    width: 1rem;
+}
+
+.list-item img:hover{
+    transform: scale(1.1);
+}
+
+.completed{
+    background-color: #3a7756;
+}
+
+.list-item:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.input-container{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    width: 80%;
+    justify-content: center;
+}
+
+.input-container button{
+    padding: .5rem;
+    font-family: 'Capriola', sans-serif;
+    color: white;
+    background-color: #4548e3;
+    border: none;
+    border-radius: 5px;
+}
+.input-container button:hover{
+    cursor: pointer;
+    transform: scale(1.01);
+}
