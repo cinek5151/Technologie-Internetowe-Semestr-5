@@ -1,0 +1,76 @@
+{
+  "events": [
+    {
+      "title" : "Wyprzedaż książek",
+      "description" : "Nie przegap najlepszej okazji na zdobycie ulubionych książek ze zniażką!",
+      "date" : "25.01.2023",
+      "number" : 1
+    },
+    {
+      "title" : "Zbiórka książek",
+      "description" : "Chcesz pomoc innym i podzielić się książka? Przyjdź i oddaj dowolną książke",
+      "date" : "25.02.2023",
+      "number" : 2
+    },
+    {
+      "title" : "Spotkanie z Katarzyną Bondą",
+      "description" : "Przyjdż i poznaj popularną polską pisarkę, autorkę powieści 'Okularnik'",
+      "date" : "25.03.2023",
+      "number" : 3
+    },
+    {
+      "title" : "Prezentacja ksiązki",
+      "description" : "Masz okazję jako jeden z pierwszych otrzymać nowy egzemparz książki popularnego polskiego autora. Jakiego? Ho-ho, dowiesz się na miejscu!",
+      "date" : "25.04.2023",
+      "number" : 4
+    },
+    {
+      "title" : "Zbiórka książek",
+      "description" : "Chcesz pomoc innym i podzielić się książka? Przyjdź i oddaj dowolną książke",
+      "date" : "25.05.2023",
+      "number" : 5
+    },
+    {
+      "title" : "Wyprzedaż książek",
+      "description" : "Nie przegap najlepszej okazji na zdobycie ulubionych książek ze zniażką!",
+      "date" : "25.06.2023",
+      "number" : 6
+    },
+    {
+      "title" : "Wieczór pamięci Adama Mickiewicza",
+      "description" : "Przyjdź i podziel się swoim ulubionym urywkiem",
+      "date" : "25.07.2023",
+      "number" : 7
+    },
+    {
+      "title" : "Wieczór pamięci Elizy Orzeszkowej",
+      "description" : "Przyjdź i podziel się swoim ulubionym urywkiem",
+      "date" : "25.08.2023",
+      "number" : 8
+    },
+    {
+      "title" : "Wieczór pamięci Henryka Sienkiewicza",
+      "description" : "Przyjdź i podziel się swoim ulubionym urywkiem",
+      "date" : "25.09.2023",
+      "number" : 9
+    },
+    {
+      "title" : "Zbiórka książek",
+      "description" : "Chcesz pomoc innym i podzielić się książka? Przyjdź i oddaj dowolną książke",
+      "date" : "25.10.2023",
+      "number" : 10
+    },
+    {
+      "title" : "Wyprzedaż książek",
+      "description" : "Nie przegap najlepszej okazji na zdobycie ulubionych książek ze zniażką!",
+      "date" : "25.11.2023",
+      "number" : 11
+    },
+    {
+      "title" : "Spotkanie fanów powieści Stephen'a King'a",
+      "description" : "Wyobrażasz że jesteś największym fanem jednego z najpopularnejszych amerykańskich pisarzy? Pryjdź i sprawdź to!",
+      "date" : "25.12.2023",
+      "number" : 12
+    }
+  ]
+}

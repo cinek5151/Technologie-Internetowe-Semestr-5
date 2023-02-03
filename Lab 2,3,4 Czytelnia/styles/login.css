@@ -1,0 +1,22 @@
+.form-header hr{
+    width: 50%;
+    border-collapse: collapse;
+    border: 1px solid #E0BAD7;
+}
+
+.post-form-info{
+    display: flex;
+    flex-direction: row;
+    gap: .5rem;
+    font-family: 'Alata', sans-serif;
+}
+
+.post-form-info a{
+    color: #439775;
+    text-transform: none;
+}
+.post-form-info a:hover{
+    transform: none;
+    cursor: pointer;
+    color: #E0BAD7;
+}

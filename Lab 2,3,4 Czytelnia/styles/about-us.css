@@ -1,0 +1,25 @@
+.about-us{
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    color: #2A4747;
+    font-family: 'Alata', sans-serif;
+    font-size: 1.1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+
+.about-links{
+    text-transform: none;
+    color: #E0BAD7;
+}
+
+.about-links:hover{
+    cursor: pointer;
+}
+
+.thanks{
+    font-size: 1.5rem;
+}

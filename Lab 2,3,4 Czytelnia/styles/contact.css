@@ -1,0 +1,23 @@
+.contacts-form{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contact-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.contact-row img{
+    width: 2rem;
+}
+
+.contact-row a, .contact-row span{
+    font-family: 'Alatsi', sans-serif;
+    font-size: 1.5rem;
+    color: #2A4747;
+}

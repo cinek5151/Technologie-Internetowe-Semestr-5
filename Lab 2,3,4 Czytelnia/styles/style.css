@@ -1,0 +1,143 @@
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: whitesmoke;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+a{
+    text-decoration: none;
+}
+
+p, span, a, nav{
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+    flex: 1;
+}
+
+.form{
+    background-color: white;
+    padding: 2rem;
+    border-radius: 5px;
+    box-shadow:
+    4.5px 4.5px 3.6px rgba(0, 0, 0, 0.024),
+    12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
+    30.1px 30.1px 24.1px rgba(0, 0, 0, 0.046),
+    100px 100px 80px rgba(0, 0, 0, 0.07);
+    width: 20%;
+}
+
+.form form{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.form-row{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    width: 100%;
+}
+
+.form-field{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    width: 100%;
+}
+
+.form-field label{
+    font-family: 'Alatsi', sans-serif;
+    color: #2A4747;
+}
+
+.form-field input{
+    font-family: 'Alata', sans-serif;
+    padding: .5rem;
+    border-radius: 5px;
+    border: 1px solid #2A4747;
+}
+
+.form-field-error{
+    color: #f56060;
+    font-family: 'Alatsi', sans-serif;
+    font-size: .8rem;
+}
+
+.form-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-header span{
+    text-transform: uppercase;
+    font-family: 'Alatsi', sans-serif;
+    color: #439775;
+    font-size: 2rem;
+}
+
+button{
+    padding: .7rem;
+    border-radius: 5px;
+    border: none;
+    font-family: 'Alatsi', sans-serif;
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: .05rem;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+.button-primary{
+    color: white;
+    background-color: #2A4747;
+    border: 1px solid #2A4747;
+}
+
+.button-primary:hover{
+    background-color: #E0BAD7;
+    border: 1px solid #E0BAD7;
+}
+
+.button-accent{
+    color: white;
+    background-color: #439775;
+    border: 1px solid #439775;
+}
+
+.button-accent:hover{
+    background-color: #E0BAD7;
+    border: 1px solid #E0BAD7;
+}
+
+footer{
+    padding: 1rem;
+    background-color: #2A4747;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Alatsi', sans-serif;
+    font-size: 1.1rem;
+}

@@ -1,0 +1,22 @@
+.room-header{
+    font-family: 'Alatsi', sans-serif;
+    text-transform: uppercase;
+    font-size: 2rem;
+    color: #2A4747;
+}
+
+.pdf{
+    border-radius: 5px;
+    width: 50%;
+    height: 500px;
+}
+
+.reading-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}

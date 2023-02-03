@@ -1,0 +1,18 @@
+.book-buttons{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    width: 20rem;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.borrow-dates{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Alatsi', sans-serif;
+    color: #439775;
+}

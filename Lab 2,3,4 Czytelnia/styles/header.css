@@ -1,0 +1,57 @@
+a{
+    color: white;
+    text-transform: uppercase;
+}
+
+a:hover{
+    color: #E0BAD7;
+    transform: scale(1.01);
+}
+
+header{
+    background-color: #2A4747;
+    color: white;
+    font-family: 'Alatsi', sans-serif;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.main-logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.main-logo p{
+    font-size: 4rem;
+}
+
+.main-logo img{
+    width: 5rem;
+}
+
+.logo-second-word{
+    color: #E0BAD7;
+}
+
+.header-links{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.user-link{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+}
+
+.user-link img{
+    width: 1.3rem;
+}

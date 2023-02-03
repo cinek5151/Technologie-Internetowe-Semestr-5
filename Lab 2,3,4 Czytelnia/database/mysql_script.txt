@@ -1,0 +1,49 @@
+CREATE DATABASE `library` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci */;
+
+CREATE TABLE `books` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `title` varchar(255) NOT NULL,
+  `author` varchar(255) NOT NULL,
+  `image_href` longtext NOT NULL,
+  `pdf_href` longtext NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+CREATE TABLE `users` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `email` varchar(255) NOT NULL,
+  `name` varchar(255) NOT NULL,
+  `password` varchar(255) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+CREATE TABLE `borrows` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `user_id` int(11) DEFAULT NULL,
+  `book_id` int(11) DEFAULT NULL,
+  `ends_date` datetime NOT NULL,
+  `start_date` datetime NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `user_fk` (`user_id`),
+  KEY `book_fk` (`book_id`),
+  CONSTRAINT `book_fk` FOREIGN KEY (`book_id`) REFERENCES `books` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
+  CONSTRAINT `user_fk` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+
+INSERT INTO `library`.`books` (`id`, `title`, `author`, `image_href`, `pdf_href`) VALUES ('1', 'Automatyzacja w VBA dla Excela 2019', 'Mike Van Niekerk', 'autvbe.jpg', 'https://helion.pl/pobierz-fragment/autvbe/pdf');
+INSERT INTO `library`.`books` (`id`, `title`, `author`, `image_href`, `pdf_href`) VALUES ('2', 'Ścieżka testera', 'Rafał Podraza', 'istqbw.jpg', 'https://helion.pl/pobierz-fragment/istqbw/pdf');
+INSERT INTO `library`.`books` (`id`, `title`, `author`, `image_href`, `pdf_href`) VALUES ('3', 'Praktyczne wprowadzenie do hakingu', 'Daniel Graham', 'etyhak.jpg', 'https://helion.pl/pobierz-fragment/etyhak/pdf');
+INSERT INTO `library`.`books` (`id`, `title`, `author`, `image_href`, `pdf_href`) VALUES ('4', 'Podręcznik dobrego programisty', 'Robert C. Martin', 'czykvv.jpg', 'https://helion.pl/pobierz-fragment/czykvv/pdf');
+INSERT INTO `library`.`books` (`id`, `title`, `author`, `image_href`, `pdf_href`) VALUES ('5', 'Kali Linux i testy penetracyjne', 'Gus Khawaja', 'kalibi.jpg', 'https://helion.pl/pobierz-fragment/kalibi/pdf');
+INSERT INTO `library`.`books` (`id`, `title`, `author`, `image_href`, `pdf_href`) VALUES ('6', 'AWS dla administratorów systemów', 'Prashant Lakhera', 'awsadm.jpg', 'https://helion.pl/pobierz-fragment/awsadm/pdf');
+INSERT INTO `library`.`books` (`id`, `title`, `author`, `image_href`, `pdf_href`) VALUES ('7', 'Lightning Network dla praktyków', 'René Pickhardt', 'linepr.jpg', 'https://helion.pl/pobierz-fragment/linepr/pdf');
+INSERT INTO `library`.`books` (`id`, `title`, `author`, `image_href`, `pdf_href`) VALUES ('8', 'Strategiczne monolity i mikrousługi', 'Tomasz Jaskula', 'strmon.jpg', 'https://helion.pl/pobierz-fragment/strmon/pdf');
+INSERT INTO `library`.`books` (`id`, `title`, `author`, `image_href`, `pdf_href`) VALUES ('9', 'Algorytmy. Ilustrowany przewodnik', 'Aditya Bhargava', 'algipv.jpg', 'https://helion.pl/pobierz-fragment/algipv/pdf');
+INSERT INTO `library`.`books` (`id`, `title`, `author`, `image_href`, `pdf_href`) VALUES ('10', 'Python zorientowany obiektowo', 'Irv Kalb', 'pytzor.jpg', 'https://helion.pl/pobierz-fragment/pytzor/pdf');
+INSERT INTO `library`.`books` (`id`, `title`, `author`, `image_href`, `pdf_href`) VALUES ('11', 'Python. Instrukcje dla programisty', 'Eric Matthes', 'blkpy2.jpg', 'https://helion.pl/pobierz-fragment/blkpy2/pdf');
+INSERT INTO `library`.`books` (`id`, `title`, `author`, `image_href`, `pdf_href`) VALUES ('12', 'Wiersz poleceń Linuksa', 'Daniel Barrett', 'wiepol.jpg', 'https://helion.pl/pobierz-fragment/wiepol/pdf');
+INSERT INTO `library`.`books` (`id`, `title`, `author`, `image_href`, `pdf_href`) VALUES ('13', 'Git i GitHub. Kontrola wersji', 'Mariot Tsitoara', 'wprgit.jpg', 'https://helion.pl/pobierz-fragment/wprgit/pdf');
+INSERT INTO `library`.`books` (`id`, `title`, `author`, `image_href`, `pdf_href`) VALUES ('14', 'Złożone zagadnienia architektury oprogramowania', 'Neal Ford', 'zlozag.jpg', 'https://helion.pl/pobierz-fragment/zlozag/pdf');
+INSERT INTO `library`.`books` (`id`, `title`, `author`, `image_href`, `pdf_href`) VALUES ('15', 'Algorytmy kryptograficzne w Pythonie', 'Shannon W. Bray', 'imkrpy.jpg', 'https://helion.pl/pobierz-fragment/imkrpy/pdf');
+INSERT INTO `library`.`books` (`id`, `title`, `author`, `image_href`, `pdf_href`) VALUES ('16', 'Java. Podstawy', 'Cay Horstmann', 'javp12.jpg', 'https://helion.pl/pobierz-fragment/javp12/pdf');
